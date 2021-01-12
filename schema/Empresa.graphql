@@ -1,0 +1,41 @@
+type Empresa {
+        id:ID!
+        nomeEmpresa:String!
+        cnpj:String
+        ramo:String
+        emailEmpresa:String
+        usuarios:[ Usuario ]
+        premios: [ Premios ]
+        data_criacao:String
+    }
+
+    input EmpresaInput {
+        nomeEmpresa:String!
+        cnpj:String
+        ramo:String
+        emailEmpresa:String
+    }
+
+
+    input EmpresaFiltro {
+        id:Int
+        nomeEmpresa:String
+    }
+
+    type Premios {
+        id:ID!
+        idEmpresa: Empresa!
+        descPremio:String
+        data_criacao:String
+
+    }
+
+    input PremiosInput {
+        idEmpresa: Int!
+        descPremio:String
+    }
+
+    input PremiosFiltro {
+        id:Int
+        descPremio:String
+    }

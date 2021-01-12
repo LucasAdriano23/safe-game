@@ -1,0 +1,16 @@
+type Alternativa {
+    id:ID!
+    alternativa:String
+    idCarta: Carta
+}
+
+input AlternativaInput {
+    alternativa:String
+    idCarta:Int
+}
+
+
+input AlternativaFiltro {
+    alternativa:String
+    idCarta:Int
+}

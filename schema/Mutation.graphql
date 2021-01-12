@@ -1,0 +1,59 @@
+type Mutation {
+    # Virgula opcional
+    # Mutations de Usuario
+    registrarUsuario(
+        dados: UsuarioRegistrarInput!
+    ): Usuario!
+
+    novoUsuario(
+        dados: UsuarioInput!
+    ): Usuario!
+
+    excluirUsuario(
+        filtro: UsuarioFiltro!
+    ): Usuario
+
+    alterarUsuario(
+        filtro: UsuarioFiltro!
+        dados: UsuarioInput!
+    ): Usuario
+
+    editarSenhaUsuario(
+        input:updatePassword!
+    ): Usuario
+
+    rodarDadoMagico(
+        input:adicionarPontuacao!
+    ): Usuario
+
+    adicionarEmpresa(dados:EmpresaInput!): Empresa!
+
+    excluirEmpresa(filtro: EmpresaFiltro!):Empresa!
+    
+    alterarEmpresa( filtro: EmpresaFiltro! dados: EmpresaInput!):Empresa
+
+    adicionarPremios(dados:PremiosInput):Premios
+
+    excluirPremios(filtro: EmpresaFiltro!):Premios
+
+    alterarPremios(filtro: PremiosFiltro! dados: PremiosInput!): Premios
+
+    adicionarCarta(dados:CartaInput): Carta
+
+    excluirCarta(filtro: CartaFiltro!):Carta
+
+    alterarCarta(filtro: CartaFiltro! dados: CartaInput!):Carta
+
+    adicionarAlternativa(dados:AlternativaInput):Alternativa
+
+    excluirAlternativa(filtro: AlternativaFiltro!):Alternativa
+
+    alterarAlternativa(filtro: AlternativaFiltro! dados: AlternativaInput!):Alternativa
+
+    adicionarRespostaUsuario(dados:AlternativaInput): respostaUsuario
+
+    excluirRespostaUsuario(filtro: respostaUsuarioFiltro!): respostaUsuario
+
+    alterarRespostaUsuario(filtro: respostaUsuarioFiltro! dados: respostaUsuarioInput!): respostaUsuario
+
+}

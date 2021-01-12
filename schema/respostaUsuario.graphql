@@ -1,0 +1,21 @@
+type respostaUsuario {
+    id:ID!
+    idUsuario: Usuario!
+    idCarta: Carta!
+    idAlternativaMarcada: Int
+    data_criacao:String
+}
+
+input respostaUsuarioInput {
+    idUsuario: Int
+    idCarta: Int
+    idAlternativaMarcada: Int
+}
+
+input respostaUsuarioFiltro {
+    id:Int
+    idUsuario: Int
+    idCarta: Int
+    idAlternativaMarcada: Int
+    data_criacao:String
+}

@@ -1,0 +1,44 @@
+type Carta {
+    id:ID!
+    questao:String
+    idAlternativaCerta:Int
+    tipoCarta:String
+    dificuldade:String
+    data_criacao:String
+    dsjogo:String
+    alternativas: [ Alternativa ]
+}
+
+input CartaInput {
+    questao:String
+    idAlternativaCerta:Int
+    tipoCarta:String
+    dificuldade:String
+}
+
+
+input CartaFiltro {
+    id: Int
+    questao:String
+    idAlternativaCerta:Int
+    dificuldade:String
+    data_criacao:String
+    dsjogo:String
+}
+
+type Alternativa {
+    id:ID!
+    alternativa:String
+    idCarta: Carta
+}
+
+input AlternativaInput {
+    alternativa:String
+    idCarta:Int
+}
+
+
+input AlternativaFiltro {
+    alternativa:String
+    idCarta:Int
+}

@@ -1,0 +1,58 @@
+type Usuario {
+    id:ID!
+    nomeUsuario: String
+    nome:String
+    sobreNome:String
+    email: String
+    sexo:String
+    pontuacao:Int
+    cpf:String
+    token: String
+    tipo_login:Int
+    idEmpresa: Empresa
+    
+}
+
+input UsuarioInput {
+    nome: String
+    sobreNome:String
+    email: String
+    senha: String
+    cpf:String
+    idEmpresa:Int
+}
+
+input UsuarioRegistrarInput {
+    nomeUsuario:String!
+    nome:String
+    sobrenome:String
+    email:String
+    senha:String
+    sexo:String
+    pontuacao:Int
+    cpf:String
+    tipo_login:Int
+    idEmpresa:Int
+}
+
+input UsuarioLoginInput {
+    cpf:String
+    senha:String
+}
+
+input UsuarioFiltro {
+    id: Int
+    nome: String
+    sobreNome:String
+    idEmpresa:Int
+}
+
+input adicionarPontuacao {
+    id:Int
+    pontuacao:Int
+}
+
+input updatePassword {
+    id:Int
+    senha:String
+}

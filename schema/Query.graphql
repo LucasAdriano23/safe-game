@@ -1,0 +1,23 @@
+# Pontos de entrada da sua API!
+type Query {
+    login(dados: UsuarioLoginInput!): Usuario
+    listarUsuarios: [Usuario]
+    listarUsuario(filtro: UsuarioFiltro!): Usuario
+
+    listarEmpresa(filtro: EmpresaFiltro): Empresa
+    listarEmpresas:[Empresa]
+
+    listarPremios(filtro: PremiosFiltro): [Premios]
+    listarPremio: Premios
+
+    listarCartas: [Carta]
+    listarCarta(filtro: CartaFiltro): Carta
+
+    listarRespostaUsuario(filtro:respostaUsuarioFiltro): respostaUsuario
+    listarRespostasUsuario: [ respostaUsuario ]
+
+    listarAlternativas: [Alternativa]
+    listarAlternativa(filtro: AlternativaFiltro): Alternativa
+
+
+}

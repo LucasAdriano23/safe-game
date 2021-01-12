@@ -1,0 +1,6 @@
+#import Usuario from 'Usuario.graphql'
+#import Empresa, Premios from 'Empresa.graphql'
+#import Carta from 'Carta.graphql'
+#import respostaUsuario from 'respostaUsuario.graphql'
+#import Query from 'Query.graphql'
+#import Mutation from 'Mutation.graphql'
